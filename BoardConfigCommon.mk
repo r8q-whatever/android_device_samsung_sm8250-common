@@ -74,8 +74,10 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 TARGET_KERNEL_SOURCE := kernel/samsung/sm8250
 TARGET_KERNEL_CONFIG := \
-    vendor/kona-perf_defconfig \
-    vendor/samsung/kona-sec-common.config
+    vendor/kona-not_defconfig \
+    vendor/samsung/kona-sec-not.config \
+    vendor/kali.config \
+    vendor/lindroid.config
 
 # Additional root folders
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
